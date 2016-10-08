@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title></title>
+<header>
+
+<center><h1>Map</h1></center>
+<br><br><br><br>
+</header>
+
+<body>
+<center>
+<div id="map" style="width:40%;height:500px"></div>
+<div class="container">
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(37.09, -95.71), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+</center>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<br><br><br><br><br>
+
+<form>
+<center>
+<b>Search Gyms:</b><br>
+<input type="text" name="search"><br>
+</center>
+</form>	
+	
+
+</div>
+</body>
+</html>
