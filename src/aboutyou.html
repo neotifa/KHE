@@ -9,24 +9,84 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="../js/scripts.js"></script>
+
 <head>
 <title>About You</title>
 </head>
 
 <body>
 <div class="container">
+<form>
+	<h4>What activity are you seeking a partner for?</h4>
 	<div class="dropdown" id="activities_form">
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Activity
+		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Activity
 		<span class="caret"></span></button>
-		<ul class="dropdown-menu">
+		<ul class="dropdown-menu" role="menu">
 			<li><a href="#">Walking</a></li>
 			<li><a href="#">Running</a></li>
 			<li><a href="#">Bodybuilding</a></li>
 			<li><a href="#">Yoga</a></li>
 			<li><a href="#">Zumba</a></li>
-			<li><a href="#">Jazzercize</a></li>
+			<li><a href="#">Tennis</a></li>
 		</ul>
 	</div>
+	
+	<hr />
+	
+	<h4>How intense are you?</h4>
+    <label class="radio-inline"><input type="radio" name="optradio">lil bit</label>
+	<label class="radio-inline"><input type="radio" name="optradio">moderate</label>
+	<label class="radio-inline"><input type="radio" name="optradio">hella hard</label>
+	
+	<hr />
+	
+	<h4>What days of the week do you work out?</h4>
+	<label class="checkbox-inline">
+      <input type="checkbox" value="">M
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">T
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">W
+    </label>
+	<label class="checkbox-inline">
+      <input type="checkbox" value="">R
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">F
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">S
+    </label>
+	<label class="checkbox-inline">
+      <input type="checkbox" value="">U
+    </label>
+	
+	<hr />
+	
+	<h4>What time of day do you usually work out?</h4>
+	<div class="dropdown" id="timeofday">
+		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Timeframe
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#">12am-5am</a></li>
+			<li><a href="#">5am-8am</a></li>
+			<li><a href="#">8am-11am</a></li>
+			<li><a href="#">11am-1pm</a></li>
+			<li><a href="#">1pm-3pm</a></li>
+			<li><a href="#">3pm-5pm</a></li>
+			<li><a href="#">5pm-8pm</a></li>
+			<li><a href="#">8pm-10pm</a></li>
+			<li><a href="#">10pm-12am</a></li>
+		</ul>
+	</div>
+	
+	<hr />
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>
 </body>
 </html>
